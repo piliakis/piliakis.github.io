@@ -158,6 +158,60 @@
     transform: translateY(0);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
+
+  #use-cases {
+    background: #f7faff;
+    padding: 60px 10%;
+    text-align: center;
+  }
+
+  .use-cases {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .use-case {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+
+  .use-case h3 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+  }
+
+  .use-case p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+
+  .section-cta a {
+    margin-top: 30px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, #4CAF50, #4ad0f5);
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .section-cta a:hover {
+    background: linear-gradient(90deg, #4ad0f5, #4CAF50);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
   </style>
 </head>
 <body>
@@ -189,6 +243,28 @@
   </ul>
   <div class="section-cta">
     <a href="#features" class="cta-buttons">Discover How Toggl Work Fits Your Team</a>
+  </div>
+</section>
+
+<section id="use-cases">
+  <h2>Use Cases</h2>
+  <p>Discover how Toggl Work empowers People Operations at every stage of the employee lifecycle:</p>
+  <div class="use-cases">
+    <div class="use-case">
+      <h3>Efficient Onboarding Processes</h3>
+      <p>Simplify onboarding with automated workflows, clear task assignments, and team visibility to get new hires up to speed faster.</p>
+    </div>
+    <div class="use-case">
+      <h3>Optimized Workforce Planning</h3>
+      <p>Allocate resources intelligently, balance workloads, and ensure teams are working on the right priorities at the right time.</p>
+    </div>
+    <div class="use-case">
+      <h3>Data-Driven Performance Reviews</h3>
+      <p>Leverage Toggl Work’s analytics to conduct insightful one-on-one conversations and make informed decisions about team growth.</p>
+    </div>
+  </div>
+  <div class="section-cta">
+    <a href="#use-cases">Explore All Use-Cases</a>
   </div>
 </section>
 
