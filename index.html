@@ -244,11 +244,12 @@
   }
   .carousel {
     position: relative;
-    width: 100%; /* Make the carousel span the full width of the viewport */
-    max-width: 100%; /* Ensure it doesn't exceed the screen width */
-    margin: 30px 0;
+    max-width: 800px; /* Limit the carousel width */
+    height: 400px; /* Set a fixed height for the carousel box */
+    margin: 30px auto;
     overflow: hidden;
-    border-radius: 0; /* Remove rounded corners for full-width effect */
+    border-radius: 10px; /* Keep rounded corners for aesthetics */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
   .carousel-images {
@@ -257,13 +258,15 @@
   }
 
   .carousel-images img {
-    width: 100vw; /* Make each image span the full viewport width */
-    flex-shrink: 0;
-    display: none; /* Hide all images by default */
+    width: 100%; /* Ensure the image takes up the full width of the carousel */
+    height: 100%; /* Scale the image to match the carousel height */
+    object-fit: cover; /* Maintain the aspect ratio and crop as needed to fit the box */
+    flex-shrink: 0; /* Prevent images from shrinking */
+    display: none; /* Hide images by default */
   }
 
   .carousel-images img.active {
-    display: block; /* Show the active image */
+    display: block; /* Display the active image */
   }
 
   .carousel-controls {
@@ -288,7 +291,6 @@
 
   .carousel-controls button:hover {
     background: rgba(0, 0, 0, 0.8);
-  }
   </style>
 </head>
 <body>
